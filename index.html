@@ -3,164 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turtle World: A Guide to Sea, Freshwater & Terrestrial Turtles</title>
+    <title>Turtle World: A Journey Through Sea and Land Turtles</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
+    <header class="hero-section">
         <div class="container">
-            <h1>Turtle World</h1>
-            <p class="tagline">Exploring the fascinating lives of turtles across the globe</p>
-            <div class="hero-buttons">
-                <button class="btn-primary" onclick="window.location.href='#facts'>Learn About Turtles</button>
-                <button class="btn-secondary" onclick="window.location.href='#habitats'>Discover Habitats</button>
+            <h1>Exploring the Amazing World of Turtles</h1>
+            <p class="subtitle">From ancient seas to freshwater habitats, discover the fascinating lives of these ancient reptiles.</p>
+            <div class="btn-group">
+                <button class="btn explore-btn" data-section="introduction">Learn More</button>
+                <button class="btn facts-btn" data-section="facts">Fun Facts</button>
             </div>
         </div>
     </header>
 
-    <main>
-        <section id="hero-content" class="hero-content">
+    <main class="content-container">
+        <section id="introduction" class="section introduction">
             <div class="container">
-                <div class="content-grid">
-                    <div class="hero-text">
-                        <h2>Turtles: Ancient Reptiles with Remarkable Adaptations</h2>
-                        <p>Turtles have existed for over 200 million years, making them among the oldest living reptile groups. Their hard shells protect them from predators and harsh environments, allowing them to thrive in diverse habitats from ocean depths to deserts.</p>
-                        <p>This guide explores the biology, conservation status, and fascinating behaviors of turtles, including sea turtles, freshwater turtles, and tortoises.</p>
+                <h2>Introduction to Turtles</h2>
+                <div class="section-content">
+                    <div class="content-text">
+                        <p>Turtles are fascinating reptiles that have existed for over 200 million years, making them some of the oldest living species on Earth. They belong to the order Testudines, which includes both turtles and tortoises. While turtles are typically associated with aquatic environments, tortoises are primarily land-dwelling.</p>
+
+                        <div class="two-column">
+                            <div class="column">
+                                <h3>Types of Turtles</h3>
+                                <p>Turtles can be broadly categorized into three main types:</p>
+                                <ul>
+                                    <li><strong>Sea Turtles:</strong> These are fully aquatic and live in oceans. They are known for their streamlined bodies, flippers, and powerful swimming abilities.</li>
+                                    <li><strong>Freshwater Turtles:</strong> These inhabit rivers, lakes, and ponds. They have a more rounded shell and webbed feet adapted for swimming.</li>
+                                    <li><strong>Terrestrial Turtles (Tortoises):</strong> These live on land and have a more dome-shaped shell. They are often found in deserts, grasslands, and forests.</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h3>Physical Characteristics</h3>
+                                <p>The shell of a turtle is a unique and protective feature. It is made up of two parts: the upper shell (carapace) and the lower shell (plastron). The carapace is typically covered with bony plates called scutes, which provide protection.</p>
+                                <p>Turtles have a slow metabolism and a relatively low body temperature compared to mammals. They rely on external sources of heat, such as the sun, to regulate their body temperature.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="hero-image">
-                        <img src="https://images.unsplash.com/photo-1586281380195-632531db7ed4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Close-up of a green sea turtle shell" class="responsive-img">
+                    <div class="content-image">
+                        <img src="https://images.unsplash.com/photo-1596873630803-44928899f88e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Various turtles in different habitats" class="turtle-image">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="facts" class="facts-section" style="background-color: #f8f9fa;">
-            <div class="container">
-                <h2>Key Facts About Turtles</h2>
-                <div class="facts-grid">
-                    <div class="fact-card">
-                        <h3>Ancient Lineage</h3>
-                        <p>Turtles first appeared in the Triassic period (about 220 million years ago) and have remained relatively unchanged in their basic body structure.</p>
-                    </div>
-                    <div class="fact-card">
-                        <h3>Shell Composition</h3>
-                        <p>The shell is made up of bones fused to the ribs and vertebrae, covered by keratinous scutes. This structure provides both protection and buoyancy.</p>
-                    </div>
-                    <div class="fact-card">
-                        <h3>Breathing</h3>
-                        <p>Unlike snakes, turtles cannot breathe through their skin. They must surface to breathe air through their lungs.</p>
-                    </div>
-                    <div class="fact-card">
-                        <h3>Lifespan</h3>
-                        <p>Some species, like the Galápagos tortoise, can live over 100 years, while others like the common snapping turtle may live 30-50 years.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="habitats" class="habitats-section">
-            <div class="container">
-                <h2>Turtle Habitats Around the World</h2>
-                <div class="habitat-tabs">
-                    <button class="tab-button active" data-tab="sea">Sea Turtles</button>
-                    <button class="tab-button" data-tab="fresh">Freshwater Turtles</button>
-                    <button class="tab-button" data-tab="terrestrial">Terrestrial Turtles</button>
-                </div>
-
-                <div id="sea" class="tab-content active">
-                    <div class="content-grid">
-                        <div class="habitat-image">
-                            <img src="https://images.unsplash.com/photo-1586281380195-632531db7ed4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Green sea turtle in ocean" class="responsive-img">
-                        </div>
-                        <div class="habitat-text">
-                            <h3>Sea Turtles</h3>
-                            <p>Sea turtles inhabit the world's oceans, nesting on beaches. There are seven species, including the green sea turtle, loggerhead, and leatherback.</p>
-                            <ul>
-                                <li>All sea turtles are marine reptiles that spend most of their lives in the ocean.</li>
-                                <li>They migrate thousands of miles between feeding grounds and nesting beaches.</li>
-                                <li>Sea turtles are endangered or threatened due to habitat loss, pollution, and climate change.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="fresh" class="tab-content">
-                    <div class="content-grid">
-                        <div class="habitat-image">
-                            <img src="https://images.unsplash.com/photo-1586281380195-632531db7ed4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Freshwater turtle in river" class="responsive-img">
-                            <p>Note: This image is illustrative. Freshwater turtles typically have different habitat preferences.</p>
-                        </div>
-                        <div class="habitat-text">
-                            <h3>Freshwater Turtles</h3>
-                            <p>Freshwater turtles live in lakes, rivers, and ponds across the globe. They include species like the red-eared slider and the snapping turtle.</p>
-                            <ul>
-                                <li>Freshwater turtles are adapted to terrestrial and aquatic environments.</li>
-                                <li>Some species, like the red-eared slider, are popular pets but can become invasive in certain regions.</li>
-                                <li>Habitat destruction and pollution threaten many freshwater turtle species.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="terrestrial" class="tab-content">
-                    <div class="content-grid">
-                        <div class="habitat-image">
-                            <img src="https://images.unsplash.com/photo-1586281380195-632531db7ed4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Galápagos tortoise in desert" class="responsive-img">
-                            <p>Note: This image is illustrative. Terrestrial turtles typically have more robust shells.</p>
-                        </div>
-                        <div class="habitat-text">
-                            <h3>Terrestrial Turtles</h3>
-                            <p>Tortoises are the terrestrial cousins of turtles, adapted to dry environments. Examples include the Galápagos tortoise and the Indian star tortoise.</p>
-                            <ul>
-                                <li>Tortoises are primarily found on land, with some species living in deserts, grasslands, and forests.</li>
-                                <li>They have thick, dome-shaped shells to protect against predators and harsh conditions.</li>
-                                <li>Many tortoise species are threatened by habitat loss and illegal pet trade.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="conservation" class="conservation-section">
-            <div class="container">
-                <h2>Conservation Efforts for Turtles</h2>
-                <div class="conservation-grid">
-                    <div class="conservation-card">
-                        <h3>Habitat Protection</h3>
-                        <p>Conserving turtle habitats is crucial. This includes protecting nesting beaches for sea turtles, maintaining clean water sources for freshwater turtles, and preserving natural vegetation.</p>
-                    </div>
-                    <div class="conservation-card">
-                        <h3>Legal Protections</h3>
-                        <p>Many turtle species are protected by international agreements like CITES (Convention on International Trade in Endangered Species). National laws also regulate turtle hunting, poaching, and trade.</p>
-                    </div>
-                    <div class="conservation-card">
-                        <h3>Community Involvement</h3>
-                        <p>Local communities play a vital role in turtle conservation through education, sustainable practices, and participation in conservation projects.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="fun-facts" class="fun-facts-section">
+        <section id="facts" class="section facts">
             <div class="container">
                 <h2>Fun Facts About Turtles</h2>
-                <div class="fun-facts-grid">
-                    <div class="fact-item">
-                        <h3>Slowest Swimmers</h3>
-                        <p>The leatherback turtle can swim at speeds up to 20 mph (32 km/h), but most turtles swim at much slower speeds.</p>
+                <div class="facts-grid">
+                    <div class="fact-card">
+                        <h3>Ancient Survivors</h3>
+                        <p>Turtles have been around for more than 200 million years, making them one of the oldest living reptile groups on Earth. Fossils of early turtles date back to the Triassic period.</p>
                     </div>
-                    <div class="fact-item">
-                        <h3>Shell Colors</h3>
-                        <p>Turtle shells can vary widely in color and pattern, influenced by species, sex, and environmental factors.</p>
+                    <div class="fact-card">
+                        <h3>Slow but Steady</h3>
+                        <p>Turtles are known for their slow movement, but this doesn't mean they are inactive. Some species can swim at speeds up to 20 miles per hour (32 km/h) in short bursts.</p>
                     </div>
-                    <div class="fact-item">
-                        <h3>Ancient Symbols</h3>
-                        <p>Turtles have been symbols of wisdom and longevity in many cultures, including ancient Greek, Chinese, and Native American traditions.</p>
+                    <div class="fact-card">
+                        <h3>Longest Lived Reptiles</h3>
+                        <p>Some turtles, particularly tortoises, can live for over 100 years, with some species reaching ages of 150 or more. The oldest known turtle, named "Tui," lived to be 190 years old.</p>
                     </div>
-                    <div class="fact-item">
-                        <h3>Nocturnal Behavior</h3>
-                        <p>Some turtle species, like the snapping turtle, are nocturnal and become active at night to avoid daytime predators.</p>
+                    <div class="fact-card">
+                        <h3>Unique Shells</h3>
+                        <p>The shell of a turtle is not just a protective covering; it also helps with buoyancy in water. The shape and size of the shell vary greatly among species, adapting to their specific habitats and lifestyles.</p>
+                    </div>
+                    <div class="fact-card">
+                        <h3>Migratory Marvels</h3>
+                        <p>Sea turtles are known for their incredible migratory abilities. They can travel thousands of miles between nesting beaches and feeding grounds. For example, the green sea turtle may travel up to 1,000 miles (1,600 km) from its nesting site to its feeding grounds.</p>
+                    </div>
+                    <div class="fact-card">
+                        <h3>Carnivorous and Herbivorous</h3>
+                        <p>Turtles have varied diets. Sea turtles are primarily carnivorous, feeding on jellyfish, crabs, and fish. Freshwater turtles and tortoises can be omnivorous, eating both plants and animals, while some species are herbivorous, consuming only vegetation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habitats" class="section habitats">
+            <div class="container">
+                <h2>Habitats of Turtles</h2>
+                <div class="habitat-tabs">
+                    <button class="tab-btn active" data-tab="sea">Sea Turtles</button>
+                    <button class="tab-btn" data-tab="freshwater">Freshwater Turtles</button>
+                    <button class="tab-btn" data-tab="terrestrial">Terrestrial Turtles</button>
+                </div>
+                <div id="sea-tab" class="tab-content active">
+                    <p>Sea turtles inhabit the open ocean and coastal areas. They are adapted to life in water with streamlined bodies, flippers for swimming, and a unique shell shape that helps with buoyancy. Common sea turtle species include the green sea turtle, loggerhead sea turtle, and leatherback sea turtle.</p>
+                    <p>These turtles are known for their long migrations, often traveling thousands of miles between nesting beaches and feeding grounds. They play a crucial role in maintaining the health of marine ecosystems by controlling populations of certain species and promoting plant growth through their feeding habits.</p>
+                </div>
+                <div id="freshwater-tab" class="tab-content">
+                    <p>Freshwater turtles are found in rivers, lakes, and ponds around the world. They have a more rounded shell compared to sea turtles and webbed feet adapted for swimming. Some freshwater turtles, like the red-eared slider, are popular pets due to their hardiness and adaptability.</p>
+                    <p>These turtles feed on a variety of foods, including insects, fish, plants, and small animals. They play an important role in their ecosystems by controlling populations of certain species and promoting plant growth through their feeding habits.</p>
+                </div>
+                <div id="terrestrial-tab" class="tab-content">
+                    <p>Terrestrial turtles, commonly known as tortoises, live on land and are often found in deserts, grasslands, and forests. They have a more dome-shaped shell that provides protection from predators and the elements. Tortoises are primarily herbivorous, feeding on plants, fruits, and vegetables.</p>
+                    <p>Some species of tortoises are known for their long lifespans, with some living over 100 years. They are also known for their slow movement, which helps them conserve energy and avoid predators.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="conservation" class="section conservation">
+            <div class="container">
+                <h2>Conservation of Turtles</h2>
+                <div class="conservation-content">
+                    <div class="content-text">
+                        <p>Turtles face numerous threats due to habitat loss, pollution, climate change, and illegal wildlife trade. Many species are listed as endangered or threatened due to these pressures.</p>
+
+                        <div class="two-column">
+                            <div class="column">
+                                <h3>Threats to Turtles</h3>
+                                <ul>
+                                    <li><strong>Habitat Destruction:</strong> Coastal development, pollution, and climate change are leading to the loss of turtle habitats.</li>
+                                    <li><strong>Pollution:</strong> Plastic waste and chemical pollutants can harm turtles, particularly sea turtles, which often mistake plastic bags for jellyfish.</li>
+                                    <li><strong>Climate Change:</strong> Rising sea levels and changes in ocean temperatures can affect turtle nesting sites and feeding grounds.</li>
+                                    <li><strong>Illegal Wildlife Trade:</strong> Turtles and their shells are often harvested for the pet trade, food, and traditional medicine.</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h3>Conservation Efforts</h3>
+                                <p>Several organizations and initiatives are working to protect turtles and their habitats. These include:</p>
+                                <ul>
+                                    <li><strong>Habitat Protection:</strong> Establishing protected areas and restoring degraded habitats.</li>
+                                    <li><strong>Educational Programs:</strong> Raising awareness about turtle conservation and promoting sustainable practices.</li>
+                                    <li><strong>Legal Protections:</strong> Implementing and enforcing laws to protect turtles and their habitats.</li>
+                                    <li><strong>Research and Monitoring:</strong> Studying turtle populations and behaviors to inform conservation strategies.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-image">
+                        <img src="https://images.unsplash.com/photo-1586775333255-43582518929e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Conservation efforts for turtles" class="turtle-image">
                     </div>
                 </div>
             </div>
@@ -169,7 +144,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2023 Turtle World. All rights reserved. | <a href="#" onclick="window.open('https://www.iucnredlist.org', '_blank')">IUCN Red List</a> | <a href="#" onclick="window.open('https://www.cites.org', '_blank')">CITES</a></p>
+            <p>&copy; 2023 Turtle World. All rights reserved. Learn more about turtle conservation efforts and how you can help protect these amazing creatures.</p>
         </div>
     </footer>
 
